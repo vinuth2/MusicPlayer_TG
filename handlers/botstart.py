@@ -53,35 +53,31 @@ async def _human_time_duration(seconds):
 async def start_private(client: Client, message: Message):
     await message.reply_text(
         f"""✨ **Welcome {message.from_user.mention()} !**\n
-💭 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) allows you to play music on groups through the new Telegram's voice chats!**
-
-💡 **Find out all the Bot's commands and how they work by clicking on the » 📚 Commands button!**
-
-🥀 All Services Provided by [GBOTS](https://t.me/GEETHUBOTUPDATES) """,
+💭 **I am 🦋 [{BOT_NAME}](https://t.me/{BOT_USERNAME}) ❤️ A Robot for Music Playing and Downloading in Telegram!**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Add me to Your Chat",
+                        "🎵 Add me",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
                 [InlineKeyboardButton("⚙️ Initial Setup", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("📚 Commands", callback_data="cbcmds"),
+                    InlineKeyboardButton("📚 Functions", callback_data="cbcmds"),
                     InlineKeyboardButton("❤️ Creator", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "👥 Support Group", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "👥 Support", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "📣 Update's Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "📣 Update's", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "🌐 Source Code", url="https://t.me/GEETHUBOTUPDATES/20"
+                        "🌐 Source Code", url="https://github.com/Vinuth-Dinsitha"
                     )
                 ],
             ]
