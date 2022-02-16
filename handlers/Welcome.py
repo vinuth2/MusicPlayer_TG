@@ -15,7 +15,8 @@ async def auto_welcome(bot: Client, msg: Message):
     link_button = "https://t.me/GEETHUBOTUPDATES"
     button_name = os.environ.get("WELCOME_BUTTON_NAME", name_button)
     button_link = os.environ.get("WELCOME_BUTTON_LINK", link_button)
-    welcome_text = f"нєу ∂єαя {mention} 😻 ,Welcome To {group_name}\nYour Id : {id}\nнσω αяє уσυ?"
+    welcome_text = f"Hey dear {mention} 😙 ,Welcome To {group_name}\nHow are you?"
+"
     WELCOME_TEXT = os.environ.get("WELCOME_TEXT", welcome_text)
     print("Welcome Message Activate")
     BUTTON = bool(os.environ.get("WELCOME_BUTTON"))
