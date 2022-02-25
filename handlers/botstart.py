@@ -53,7 +53,7 @@ async def _human_time_duration(seconds):
 async def start_private(client: Client, message: Message):
     await message.reply_text(
         f"""✨ **Welcome {message.from_user.mention()} !**\n
-💭 **I am 🦋 [𝓢𝓽𝓮𝓵𝓵𝓪](https://telegra.ph/file/8212cf6bbc30109271223.jpg) ❤️ A Robot for Music Playing and Downloading in Telegram!**""",
+💭 **I am 🦋 [𝓢𝓽𝓮𝓵𝓵𝓪 ❤️](https://t.me/TheStella_bot) A Robot for Music Playing and Downloading in Telegram!**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
