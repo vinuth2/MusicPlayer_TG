@@ -16,7 +16,7 @@ from config import (
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""✨ **Welcome [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**\n
-💭 **I am 🦋 [𝓢𝓽𝓮𝓵𝓵𝓪](https://t.me/TheStella_bot) ❤️ A Robot for Music Playing and Downloading in Telegram!**""",
+💭 **I am 🦋 [𝓢𝓽𝓮𝓵𝓵𝓪](t.me/TheStella_bot) ❤️ A Robot for Music Playing and Downloading in Telegram!**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
