@@ -17,7 +17,7 @@ from pyrogram import Client, filters
 @Client.on_message(filters.command(["whois", "info"]))
 async def who_is(client, message):
     """ extract user information """
-    status_message = await message.reply_text("ρℓєαѕє ωαιт, gєттιиg υѕєя ιиfσ..!")
+    status_message = await message.reply_text("Please wait, getting user info..!")
     from_user = None
     from_user_id, _ = extract_user(message)
     try:
@@ -34,17 +34,17 @@ async def who_is(client, message):
     username = from_user.username or ""
     
     message_out_str = (
-        "<b>ℹ️Name:</b> "
+        "<b>⭐️ Name:</b> "
         f"<a href='tg://user?id={from_user.id}'>{first_name}</a>\n"
-        f"<b>🔤Suffix:</b> {last_name}\n"
+        f"<b>🔤 Suffix:</b> {last_name}\n"
         f"<b>#️⃣Username:</b> @{username}\n"
-        f"<b>❗User ID:</b> <code>{from_user.id}</code>\n"
-        f"<b>🤝User Link:</b> {from_user.mention}\n" if from_user.username else ""
-        f"<b>👻Is Deleted:</b> True\n" if from_user.is_deleted else ""
-        f"<b>✅Is Verified:</b> True" if from_user.is_verified else ""
-        f"<b>🥸Is Scam:</b> True" if from_user.is_scam else ""
-        # f"<b>😈Is Fake:</b> True" if from_user.is_fake else ""
-        f"<b>⌚Last Seen:</b> <code>{last_online(from_user)}</code>\n\n"
+        f"<b>🆔 User ID:</b> <code>{from_user.id}</code>\n"
+        f"<b>🔗 User Link:</b> {from_user.mention}\n" if from_user.username else ""
+        f"<b>👻 Is Deleted:</b> True\n" if from_user.is_deleted else ""
+        f"<b>✅ Is Verified:</b> True" if from_user.is_verified else ""
+        f"<b>🥸 Is Scam:</b> True" if from_user.is_scam else ""
+        # f"<b>😈 Is Fake:</b> True" if from_user.is_fake else ""
+        f"<b>⌚ Last Seen:</b> <code>{last_online(from_user)}</code>\n\n"
     )
 
     if message.chat.type in ["supergroup", "channel"]:
