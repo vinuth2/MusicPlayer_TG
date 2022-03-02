@@ -121,9 +121,8 @@ async def help(client: Client, message: Message):
     await message.reply_text(
         f"""✨ **Hello** {message.from_user.mention()} !
 
-» **press the button below to read the explanation and see the list of available commands !**
-
-⚡ Powered by {BOT_NAME}""",
+» **press the button below to read the explanation and see the list of available commands !**"""
+         ,
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton(text="⚙️ Initial Setup", callback_data="cbguide")]]
         ),
