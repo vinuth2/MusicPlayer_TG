@@ -37,7 +37,7 @@ async def who_is(client, message):
         "<b>⭐️ Name:</b> "
         f"<a href='tg://user?id={from_user.id}'>{first_name}</a>\n"
         f"<b>🔤 Suffix:</b> {last_name}\n"
-        f"<b>#️⃣Username:</b> @{username}\n"
+        f"<b>#️⃣ Username:</b> @{username}\n"
         f"<b>🆔 User ID:</b> <code>{from_user.id}</code>\n"
         f"<b>🔗 User Link:</b> {from_user.mention}\n" if from_user.username else ""
         f"<b>👻 Is Deleted:</b> True\n" if from_user.is_deleted else ""
