@@ -18,7 +18,7 @@ async def join_group(client, message):
         invitelink = await client.export_chat_invite_link(chid)
     except:
         await message.reply_text(
-            "• ι иєє∂ ρєямιѕѕισи тσ α∂∂ му αѕѕιѕтαит тσ тнιѕ ¢нαт!\n\n» Pᴇʀᴍɪssɪᴏɴ ›› __Add Users__",
+            "• I need Permission to add my Assistant to this chat\n\n» Permission ›› __Add Users__",
         )
         return
 
@@ -34,12 +34,12 @@ async def join_group(client, message):
     except Exception as e:
         print(e)
         await message.reply_text(
-            f"🛑 Fʟᴏᴏᴅ Wᴀɪᴛ Eʀʀᴏʀ 🛑 \n\n**userbot couldn't join your group due to heavy join requests for userbot**"
+            f"🛑 Flood wait Error 🛑 \n\n**userbot couldn't join your group due to heavy join requests for userbot**"
             "\n\n**or add assistant manually to your Group and try again**",
         )
         return
     await message.reply_text(
-        f"✅ Usᴇʀʙᴏᴛᴊᴏɪɴ Sᴜᴄᴄᴇssғᴜʟʟʏ Jᴏɪɴᴇᴅ ɪɴ ʏᴏᴜʀ Cʜᴀᴛ.\n\nᶜʰᵃᵗ ᴵᴰ :<code>{message.chat.id}</code>",
+        f"✅ Userbot-join Successfully Joined in your chat.\n\nChat id :<code>{message.chat.id}</code>",
     )
 
 
@@ -49,7 +49,7 @@ async def join_group(client, message):
 @authorized_users_only
 async def leave_group(client, message):
     try:
-        await USER.send_message(message.chat.id, "✅ Usᴇʀʙᴏᴛ Lᴇᴀᴠᴇᴅ ғʀᴏᴍ ʏᴏᴜʀ Cʜᴀᴛ...\n\n ᶜʰᵃᵗ ᴵᴰ :<code>{message.chat.id}</code>")
+        await USER.send_message(message.chat.id, "✅ Userbot Leaved from your chat...\n\n Chat id :<code>{message.chat.id}</code>")
         await USER.leave_chat(message.chat.id)
     except:
         await message.reply_text(
