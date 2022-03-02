@@ -80,7 +80,7 @@ def song(_, message):
         )
         m.delete()
     except Exception as e:
-        m.edit("❌ Error Contact [Creator](https://t.me/{own})")
+        m.edit("❌ Error Contact Creator : @ImVinuth")
         print(e)
 
     try:
@@ -252,7 +252,7 @@ async def vsong(client, message):
             ytdl_data = ytdl.extract_info(link, download=True)
             file_name = ytdl.prepare_filename(ytdl_data)
     except Exception as e:
-        return await msg.edit(f"🚫 Something went Error ! : {e}\n\n[Contact](https://t.me/{own}")
+        return await msg.edit(f"🚫 Something went Error ! : {e}\n\nContact @ImVinuth")
     preview = wget.download(thumbnail)
     await msg.edit("📤 Uploading Video to Telegram...")
     await message.reply_video(
