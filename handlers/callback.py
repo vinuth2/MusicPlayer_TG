@@ -87,8 +87,7 @@ async def cbbasic(_, query: CallbackQuery):
 /search (video name) - search video from youtube detailed
 /video (video name) - download video from youtube detailed
 /lyric - (song name) lyrics scrapper
-
-⚡ __Powered by {BOT_NAME}""",
+­­­­­­­­­­­""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbhelp")]]
         ),
@@ -105,8 +104,7 @@ async def cbadvanced(_, query: CallbackQuery):
 /ping - check the bot ping status
 /uptime - check the bot uptime status
 /id - show the group/user id & other
-
-⚡ Powered by {BOT_NAME}""",
+­­­­­­­­­­­""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbhelp")]]
         ),
@@ -130,8 +128,7 @@ async def cbadmin(_, query: CallbackQuery):
 /control - open the player settings panel
 /delcmd (on | off) - enable / disable del cmd feature
 /music (on / off) - disable / enable music player in your group
-
-⚡ Powered by {BOT_NAME}""",
+­­­­­­­­­­­""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbhelp")]]
         ),
@@ -149,8 +146,7 @@ async def cbsudo(_, query: CallbackQuery):
 /clear - remove all .jpg files
 /eval (query) - execute code
 /sh (query) - run code
-
-⚡ Powered by {BOT_NAME}""",
+­­­­­­­­­­­""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbhelp")]]
         ),
@@ -169,8 +165,7 @@ async def cbowner(_, query: CallbackQuery):
 /blocklist - show you the list of user was blocked for using your bot
 
 📝 note: all commands owned by this bot can be executed by the owner of the bot without any exceptions.
-
-⚡ Powered by {BOT_NAME}""",
+­­­­­­­­­­­""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbhelp")]]
         ),
@@ -189,8 +184,7 @@ async def cbguide(_, query: CallbackQuery):
 4.) **turn on the video chat first before start to play music.**
 
 📌 **if the userbot not joined to video chat, make sure if the video chat already turned on, or type /leave then type /join again.**
-
-⚡ Powered by {BOT_NAME}""",
+­­­­­­­­­­­""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [InlineKeyboardButton("📚 Command List", callback_data="cbhelp")],
@@ -247,7 +241,7 @@ async def cbdelcmds(_, query: CallbackQuery):
  2️⃣ to turn off feature:
      » type `/delcmd off`
       
-⚡ Powered by {BOT_NAME}""",
+­­­­­­­­­­­""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbback")]]
         ),
@@ -260,8 +254,7 @@ async def cbhelps(_, query: CallbackQuery):
         f"""✨ **Hello** [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !
 
 » **press the button below to read the explanation and see the list of available commands !**
-
-⚡ Powered by {BOT_NAME}""",
+­­­­­­­­­­­""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -292,7 +285,7 @@ async def cbguides(_, query: CallbackQuery):
 
 📌 **if the userbot not joined to video chat, make sure if the video chat already turned on, or type /leave then type /join again.**
 
-⚡ Powered by {BOT_NAME}""",
+­­­­­­­­­­­­­­­­­­­­­­""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbstart")]]
         ),
@@ -314,8 +307,7 @@ async def cblocal(_, query: CallbackQuery):
 /search (video name) - search video from youtube detailed
 /video (video name) - download video from youtube detailed
 /lyric - (song name) lyrics scrapper
-
-⚡ Powered by {BOT_NAME}""",
+­­­­­­­­­­­""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
         ),
@@ -332,8 +324,7 @@ async def cbadven(_, query: CallbackQuery):
 /ping - check the bot ping status
 /uptime - check the bot uptime status
 /id - show the group/user id & other
-
-⚡ Powered by {BOT_NAME}""",
+­­­­­­­­­­­""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
         ),
@@ -357,8 +348,7 @@ async def cblamp(_, query: CallbackQuery):
 /control - open the player settings panel
 /delcmd (on | off) - enable / disable del cmd feature
 /music (on / off) - disable / enable music player in your group
-
-⚡ Powered by {BOT_NAME}""",
+­­­­­­­­­­­""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
         ),
@@ -376,8 +366,7 @@ async def cblab(_, query: CallbackQuery):
 /clear - remove all .jpg files
 /eval (query) - execute code
 /sh (query) - run code
-
-⚡ Powered by {BOT_NAME}""",
+­­­­­­­­­­­""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
         ),
@@ -396,8 +385,7 @@ async def cbmoon(_, query: CallbackQuery):
 /blocklist - show you the list of user was blocked for using your bot
 
 📝 note: all commands owned by this bot can be executed by the owner of the bot without any exceptions.
-
-⚡ Powered by {BOT_NAME}""",
+­­­­­­­­­­­""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
         ),
@@ -429,8 +417,7 @@ async def cmdsyntax(_, query: CallbackQuery):
 
 • `/play (query)` - for playing music via youtube
 • `/ytp (query)` - for playing music directly via youtube
-
-⚡ Powered by {BOT_NAME}""",
+­­­­­­­­­­­""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cmdhome")]]
         ),
