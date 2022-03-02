@@ -283,9 +283,8 @@ async def cbguides(_, query: CallbackQuery):
 3.) **add @{ASSISTANT_NAME} to your group or type /join to invite her.**
 4.) **turn on the video chat first before start to play music.**
 
-📌 **if the userbot not joined to video chat, make sure if the video chat already turned on, or type /leave then type /join again.**
-
-­­­­­­­­­­­­­­­­­­­­­­""",
+📌 **if the userbot not joined to video chat, make sure if the video chat already turned on, or type /leave then type /join again**
+­­­­­­­­­­­""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbstart")]]
         ),
