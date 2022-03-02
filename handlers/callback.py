@@ -54,9 +54,7 @@ async def cbhelp(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""✨ **Hello !**
 
-» **press the button below to read the explanation and see the list of available commands !**
-
-⚡ Powered by {BOT_NAME}""",
+» **press the button below to read the explanation and see the list of available commands !**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -79,7 +77,7 @@ async def cbbasic(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""🏮 **here is the basic commands**
 
-🎧 [ VOICE CHAT PLAY CMD ]
+🎧 ```VOICE CHAT PLAY CMD```
 
 /play (song name) - play song from youtube
 /ytp (song name) - play song directly from youtube 
