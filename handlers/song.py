@@ -42,7 +42,7 @@ ydl_opts = {
 @Client.on_message(command(["song","aud", f"song@{bn}"]) & ~filters.edited)
 def song(_, message):
     query = " ".join(message.command[1:])
-    m = message.reply("🔎 Sᴇᴀʀᴄʜɪɴɢ Sᴏɴɢ ᴏɴ Yᴏᴜᴛᴜʙᴇ..! ./n **Upload Getting Slowed due to Heavy Traffic** [Learn More](https://en.m.wikipedia.org/wiki/Network_traffic)")
+    m = message.reply("🔎 Searching Song on Youtube..! ./n **Upload Getting Slowed due to Heavy Traffic** [Learn More](https://en.m.wikipedia.org/wiki/Network_traffic)")
     ydl_ops = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -55,21 +55,21 @@ def song(_, message):
         duration = results[0]["duration"]
 
     except Exception as e:
-        m.edit("❌ Sᴏʀʀʏ I ᴄᴀɴ'ᴛ Fɪɴᴅ ʏᴏᴜʀ Rᴇǫᴜᴇsᴛᴇᴅ Sᴏɴɢ 🙁.\n\nTʀʏ Aɴᴏᴛʜᴇʀ Sᴏɴɢ Nᴀᴍᴇ ᴏʀ Cʜᴇᴄᴋ Sᴘᴇʟʟɪɴɢ..!\n\nIғ ʏᴏᴜ Fᴀᴄɪɴɢ sᴀᴍᴇ ɪssᴜᴇs ғᴏʀ sᴇᴄᴏɴᴅ Tɪᴍᴇ Rᴇᴘᴏʀᴛ ɪᴛ ᴏɴ @AAMIBOTSUPPORT")
+        m.edit("❌ Sorry I can't find your Requested Song 🙁.\n\nTry Another Song name or check spelling...\n\nIf you Facing same issues for second time report it on @MusicUpdates_chat")
         print(str(e))
         return
-    m.edit("📥 ∂σωиℓσα∂ιиg ѕσиg тσ ∂αтαвαѕє...ρℓєαѕє ωαιт..!")
+    m.edit("📥 Downloading song to database... Please wait!")
     try:
         with yt_dlp.YoutubeDL(ydl_ops) as ydl:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f"🎵 Sᴏɴɢ Uᴘʟᴏᴀᴅᴇᴅ ғʀᴏᴍ YᴏᴜTᴜʙᴇ Mᴜsɪᴄ..!.\n\nPᴏᴡᴇʀᴇᴅ ʙʏ [{bat}](https://t.me/{bn})"
+        rep = f"🎵 Song Uploaded from Youtube music..\n\nPowered by [{bat}](https://t.me/{bn})"
         secmul, dur, dur_arr = 1, 0, duration.split(":")
         for i in range(len(dur_arr) - 1, -1, -1):
             dur += int(float(dur_arr[i])) * secmul
             secmul *= 60
-        m.edit("📤 υρℓσα∂ιиg fιℓє тσ тєℓєgяαм...")
+        m.edit("📤 Uploading file to Telegram...")
         message.reply_audio(
             audio_file,
             caption=rep,
@@ -80,7 +80,7 @@ def song(_, message):
         )
         m.delete()
     except Exception as e:
-        m.edit("❌ Error Contact [ƈɾҽαƚσɾ](https://t.me/{own})")
+        m.edit("❌ Error Contact [Creator](https://t.me/{own})")
         print(e)
 
     try:
@@ -247,14 +247,14 @@ async def vsong(client, message):
     except Exception as e:
         print(e)
     try:
-        msg = await message.reply("📥 ∂σωиℓσα∂ιиg νι∂єσ fяσм уσυтυвє...")
+        msg = await message.reply("📥 Downloading Video from Youtube...")
         with YoutubeDL(ydl_opts) as ytdl:
             ytdl_data = ytdl.extract_info(link, download=True)
             file_name = ytdl.prepare_filename(ytdl_data)
     except Exception as e:
-        return await msg.edit(f"🚫 ѕσмєтнιиg ωєит єяяσя ! : {e}\n\n[¢σитα¢т](https://t.me/{own}")
+        return await msg.edit(f"🚫 Something went Error ! : {e}\n\n[Contact](https://t.me/{own}")
     preview = wget.download(thumbnail)
-    await msg.edit("📤 υρℓσα∂ιиg νι∂єσ тσ тєℓєgяαм...")
+    await msg.edit("📤 Uploading Video to Telegram...")
     await message.reply_video(
         file_name,
         duration=int(ytdl_data["duration"]),
@@ -272,14 +272,14 @@ async def vsong(client, message):
 async def lyrics(_, message):
     try:
         if len(message.command) < 2:
-            await message.reply_text("» **give a lyric name too.**")
+            await message.reply_text("» **Give a lyric name too.**")
             return
         query = message.text.split(None, 1)[1]
-        rep = await message.reply_text("🔎 Sᴇᴀʀᴄʜɪɴɢ ғᴏʀ Lʏʀɪᴄs ʏᴏᴜ Wᴀɴᴛ...")
+        rep = await message.reply_text("🔎 Searching for Lyrics you want...")
         resp = requests.get(
             f"https://api-tede.herokuapp.com/api/lirik?l={query}"
         ).json()
         result = f"{resp['data']}"
         await rep.edit(result)
     except Exception:
-        await rep.edit("❌ σн-ѕиαρѕ🤧 , ℓуяι¢ѕ иσт fσυи∂! 🚫\n\n» ➡️ Gɪᴠᴇ Cᴏʀʀᴇᴄᴛ Sᴏɴɢ Tɪᴛʟᴇ!\n\n Aɢᴀɪɴ Eʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ? Cᴏɴᴛᴀᴄᴛ [Cʀᴇᴀᴛᴏʀ](https://t.me/{own} ᴏʀ Asᴋ ɪɴ [Sᴜᴘᴘᴏʀᴛ](https://t.me/{sup})")
+        await rep.edit("❌ Oh-Snaps 😞, Lyrics not found!\n\n ➡️ Give correct Song title...\n\n Again Error occurred? Contact Vinuth")
