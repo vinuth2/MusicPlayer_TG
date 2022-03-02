@@ -21,16 +21,16 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 @Client.on_message(command(["stream", f"stream@{BOT_USERNAME}"]) & other_filters)
 async def stream(_, message: Message):
     costumer = message.from_user.mention
-    lel = await message.reply_text("🔁 Pʀᴏᴄᴇssɪɴɢ Aᴜᴅɪᴏ ʏᴏᴜ Pʀᴏᴠɪᴅᴇᴅ...")
+    lel = await message.reply_text("🔁 Processing Audio you provided..")
 
     keyboard = InlineKeyboardMarkup(
         [
             [
                 InlineKeyboardButton(
-                    text="✨ ɢʀᴏᴜᴘ", url=f"https://t.me/{GROUP_SUPPORT}"
+                    text="• Group", url=f"https://t.me/{GROUP_SUPPORT}"
                 ),
                 InlineKeyboardButton(
-                    text="🌻 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    text="• Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
                 ),
             ]
         ]
