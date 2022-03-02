@@ -123,7 +123,7 @@ async def help(client: Client, message: Message):
 
 » **press the button below to read the explanation and see the list of available commands !**
 
-⚡ __Powered by {BOT_NAME} A.I__""",
+⚡ Powered by {BOT_NAME}""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton(text="⚙️ Initial Setup", callback_data="cbguide")]]
         ),
