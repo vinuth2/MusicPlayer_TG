@@ -42,7 +42,7 @@ async def cbhelp(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""**Stella's Help menu**
 
-**•** Press the button below to read the Explanation and See the list of **Available Commands!**""",
+• Press the button below to read the Explanation and See the list of **Available Commands!**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -146,7 +146,7 @@ async def cbowner(_, query: CallbackQuery):
 /unblock (user id - reason) - unblock user you blocked for using your bot
 /blocklist - show you the list of user was blocked for using your bot
 
-📝 Note: All Commands Owned by this bot can be Executed by the Owner of the bot without any Exceptions.""",
+📝 Note: All commands owned by this bot can be Executed by the Owner of the bot without any Exceptions.""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("« Back", callback_data="cbhelp")]]
         ),
@@ -166,7 +166,8 @@ async def cbguide(_, query: CallbackQuery):
 
 If the userbot not joined to video chat, Make sure if the video chat already turned on, or type /leave then type /join again..
 
-[Support](https://t.me/MusicUpdates_Chat) | [Updates](https://t.me/The_Roboton) | Bot Developer [Vinuth](http://t.me/ImVinuth)""",
+•[Support Group](https://t.me/MusicUpdates_Chat) | •[Updates Channel](https://t.me/The_Roboton) 
+• Bot Developer [Vinuth](http://t.me/ImVinuth)""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [InlineKeyboardButton("📚 Command List", callback_data="cbhelp")],
@@ -234,7 +235,7 @@ async def cbhelps(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""**Stella's Help menu**
 
-**•** Press the button below to read the Explanation and See the list of **Available Commands!­­­­­­­­­­­**""",
+• Press the button below to read the Explanation and See the list of **Available Commands!­­­­­­­­­­­**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -265,7 +266,8 @@ async def cbguides(_, query: CallbackQuery):
 
 If the userbot not joined to video chat, Make sure if the video chat already turned on, or type /leave then type /join again..
 
-[Support](https://t.me/MusicUpdates_Chat) | [Updates](https://t.me/The_Roboton) | Bot Developer [Vinuth](http://t.me/ImVinuth)""",
+•[Support](https://t.me/MusicUpdates_Chat) | •[Updates](https://t.me/The_Roboton) 
+• Bot Developer [Vinuth](http://t.me/ImVinuth)""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("« Back", callback_data="cbstart")]]
         ),
@@ -358,7 +360,7 @@ async def cbmoon(_, query: CallbackQuery):
 /unblock (user id - reason) - unblock user you blocked for using your bot
 /blocklist - show you the list of user was blocked for using your bot
 
-📝 Note: All Commands Owned by this bot can be Executed by the Owner of the bot without any Exceptions.­­­­­­­­­­­""",
+📝 Note: All commands owned by this bot can be Executed by the Owner of the bot without any Exceptions.­­­­­­­­­­­""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("« Back", callback_data="cbcmds")]]
         ),
