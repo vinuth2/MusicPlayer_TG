@@ -93,7 +93,7 @@ async def start_group(client: Client, message: Message):
         ]
     )
 
-    alive = f"**Hello there, I'm Stella**\n\n• Bot is working normally\n• My Master: [Vinuth](https://t.me/ImVinuth)\n• Bot Version: `v{__version__}`\n• Pyrogram Version: `{pyrover}`\n• Python Version: `{__python_version__}`\n• Uptime Status: `{uptime}`\n\n Thank You For Using Our Services! ❤"
+    alive = f"**Hey there, I'm Stella**\n\n• Bot is working normally\n• My Master: [Vinuth](https://t.me/ImVinuth)\n• Bot Version: `v{__version__}`\n• Pyrogram Version: `{pyrover}`\n• Python Version: `{__python_version__}`\n• Uptime Status: `{uptime}`\n\n Thank you for using our Services! ❤"
 
     await message.reply_photo(
         photo=f"{ALIVE_IMG}",
