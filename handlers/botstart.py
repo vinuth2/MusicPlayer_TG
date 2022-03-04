@@ -52,8 +52,8 @@ async def _human_time_duration(seconds):
 )
 async def start_private(client: Client, message: Message):
     await message.reply_text(
-        f"""✨ **Welcome {message.from_user.mention()} !**\n
-💭 **I am 🦋 [𝓢𝓽𝓮𝓵𝓵𝓪](t.me/TheStella_bot) ❤️ A Robot for Music Playing and Downloading in Telegram!**""",
+        f"""Hey there! My name is **Stella** ✨
+A Bot for Music Playing and Downloading in Telegram. To know how to use me, Click on the Initial Setup button!""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -119,10 +119,7 @@ async def start_group(client: Client, message: Message):
 )
 async def help(client: Client, message: Message):
     await message.reply_text(
-        f"""✨ **Hello** {message.from_user.mention()} !
-
-» **press the button below to read the explanation and see the list of available commands !**
-­­­­­­­­­­­""",
+        f"""Press the button below to read the explanation and see the list of available commands!""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton(text="⚙️ Initial Setup", callback_data="cbguide")]]
         ),
