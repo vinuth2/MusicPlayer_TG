@@ -16,8 +16,7 @@ from config import (
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""Hey there! My name is **Stella** ✨
-I can Playing and Downloading music on Telegram.
-To know how to use me, click on the Initial Setup button!""",
+I can Play and Download music on Telegram. To know how to use me, click on Initial Setup button!""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -167,6 +166,7 @@ async def cbguide(_, query: CallbackQuery):
 
 If the userbot not joined to video chat, Make sure if the video chat already turned on, or type /leave then type /join again..
 
+
 • [Support](https://t.me/MusicUpdates_Chat) | • [Updates Channel](https://t.me/The_Roboton) 
 • Bot Developer [Vinuth](http://t.me/ImVinuth)
 
@@ -268,6 +268,7 @@ async def cbguides(_, query: CallbackQuery):
 • Turn on the video chat first before start to play music.
 
 If the userbot not joined to video chat, Make sure if the video chat already turned on, or type /leave then type /join again..
+
 
 • [Support](https://t.me/MusicUpdates_Chat) | • [Updates Channel](https://t.me/The_Roboton) 
 • Bot Developer [Vinuth](http://t.me/ImVinuth)
