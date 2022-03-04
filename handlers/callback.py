@@ -52,9 +52,7 @@ A Bot for Music Playing and Downloading in Telegram. To know how to use me, Clic
 @Client.on_callback_query(filters.regex("cbhelp"))
 async def cbhelp(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""✨ **Hello !**
-
-» **press the button below to read the explanation and see the list of available commands !**""",
+        f"""Press the button below to read the explanation and see the list of available commands !**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
