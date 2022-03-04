@@ -85,7 +85,7 @@ async def start_group(client: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("✨ Support", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("💬 Support", url=f"https://t.me/{GROUP_SUPPORT}"),
                 InlineKeyboardButton(
                     "📣 Updates", url=f"https://t.me/{UPDATES_CHANNEL}"
                 ),
@@ -93,7 +93,7 @@ async def start_group(client: Client, message: Message):
         ]
     )
 
-    alive = f"**Hello {message.from_user.mention()}, i'm {BOT_NAME}**\n\n✨ Bot is working normally\n\n🍀 My Master: [{ALIVE_NAME}](https://t.me/{OWNER_NAME})\n\n✨ Bot Version: `v{__version__}`\n\n🍀 Pyrogram Version: `{pyrover}`\n\n✨ Python Version: `{__python_version__}`\n\n🍀 Uptime Status: `{uptime}`\n\n**Thank You For Using Our Services!** ❤"
+    alive = f"**Hello there, I'm Stella**\n\n• Bot is working normally\n• My Master: [Vinuth](https://t.me/ImVinuth)\n• Bot Version: `v{__version__}`\n• Pyrogram Version: `{pyrover}`\n• Python Version: `{__python_version__}`\n• Uptime Status: `{uptime}`\n\n Thank You For Using Our Services! ❤"
 
     await message.reply_photo(
         photo=f"{ALIVE_IMG}",
