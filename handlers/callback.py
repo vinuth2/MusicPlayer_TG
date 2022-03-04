@@ -19,11 +19,10 @@ async def cbstart(_, query: CallbackQuery):
 A Robot for Music Playing and Downloading in Telegram. To know how to use me, Please click on the Initial Setup button!""",
         reply_markup=InlineKeyboardMarkup(
             [
-                ],
-                [InlineKeyboardButton("⚙ Initial Setup", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("❓ Help", callback_data="cbcmds"),
-                    )
+                InlineKeyboardButton("⚙ Initial Setup", callback_data="cbhowtouse")],
+                [InlineKeyboardButton("❓ Help", callback_data="cbcmds"),
+                    ),
                 ],
                 [
                     InlineKeyboardButton(
@@ -34,7 +33,7 @@ A Robot for Music Playing and Downloading in Telegram. To know how to use me, Pl
                     ),
                 ],
                 [
-                    InlineKeyboardButton(
+                InlineKeyboardButton(
                         "➕ Add me to your chat", 
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true""
                     )
