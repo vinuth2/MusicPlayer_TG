@@ -40,7 +40,9 @@ I can Play and Download Music on Telegram. To know how to use me, Click on the I
 @Client.on_callback_query(filters.regex("cbhelp"))
 async def cbhelp(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""**•** Press the button below to read the Explanation and See the list of Available Commands!""",
+        f"""**[Stella](t.me/TheStella_bot)'s Help menu**
+
+**•** Press the button below to read the Explanation and See the list of **Available Commands!**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -237,7 +239,9 @@ async def cbdelcmds(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbcmds"))
 async def cbhelps(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""**•** Press the button below to read the Explanation and See the list of Available Commands!­­­­­­­­­­­""",
+        f"""**[Stella](t.me/TheStella_bot)'s Help menu**
+
+**•** Press the button below to read the Explanation and See the list of **Available Commands!­­­­­­­­­­­**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
