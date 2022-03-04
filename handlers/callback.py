@@ -18,11 +18,17 @@ async def cbstart(_, query: CallbackQuery):
         f"""Hey there! My name is **Stella** ✨
 A Robot for Music Playing and Downloading in Telegram. To know how to use me, Please click on the Initial Setup button!""",
         reply_markup=InlineKeyboardMarkup(
-            [
+[
                 [
-                InlineKeyboardButton("⚙ Initial Setup", callback_data="cbhowtouse")],
-                [InlineKeyboardButton("❓ Help", callback_data="cbcmds"),
-                    ),
+                    InlineKeyboardButton(
+                        "🎵 Add me",
+                        url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                    )
+                ],
+                [InlineKeyboardButton("⚙️ Initial Setup", callback_data="cbhowtouse")],
+                [
+                    InlineKeyboardButton("📚 Functions", callback_data="cbcmds"),
+                    InlineKeyboardButton("❤️ Creator", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
@@ -33,9 +39,8 @@ A Robot for Music Playing and Downloading in Telegram. To know how to use me, Pl
                     ),
                 ],
                 [
-                InlineKeyboardButton(
-                        "➕ Add me to your chat", 
-                        url=f"https://t.me/{BOT_USERNAME}?startgroup=true""
+                    InlineKeyboardButton(
+                        "🌐 Source Code", url="https://github.com/Vinuth-Dinsitha"
                     )
                 ],
             ]
