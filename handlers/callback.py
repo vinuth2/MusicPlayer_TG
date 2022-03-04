@@ -15,21 +15,15 @@ from config import (
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""Hey there! My name is **Stella** ✨\n
-A Robot for Music Playing and Downloading in Telegram.\n
-To know how to use me, Please click on the Initial Setup button!""",
+        f"""Hey there! My name is **Stella** ✨
+A Robot for Music Playing and Downloading in Telegram. To know how to use me, Please click on the Initial Setup button!""",
         reply_markup=InlineKeyboardMarkup(
             [
-                [
-                    InlineKeyboardButton(
-                        "🎵 Add me",
-                        url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
-                    )
                 ],
                 [InlineKeyboardButton("⚙ Initial Setup", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("📚 Functions", callback_data="cbcmds"),
-                    InlineKeyboardButton("❤️ Creator", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("❓ Help", callback_data="cbcmds"),
+                    )
                 ],
                 [
                     InlineKeyboardButton(
@@ -41,7 +35,8 @@ To know how to use me, Please click on the Initial Setup button!""",
                 ],
                 [
                     InlineKeyboardButton(
-                        "🌐 Source Code", url="https://github.com/Vinuth-Dinsitha"
+                        "➕ Add me to your chat", 
+                        url=f"https://t.me/{BOT_USERNAME}?startgroup=true""
                     )
                 ],
             ]
