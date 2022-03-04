@@ -20,27 +20,15 @@ I can Play and Download Music on Telegram. To know how to use me, Click on the I
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(
-                        "🎵 Add me",
-                        url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
-                    )
+                    InlineKeyboardButton("⚙️ Initial Setup", callback_data="cbhowtouse"),
                 ],
-                [InlineKeyboardButton("⚙️ Initial Setup", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("📚 Functions", callback_data="cbcmds"),
-                    InlineKeyboardButton("❤️ Creator", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("❓ Help", callback_data="cbcmds"),
+                    InlineKeyboardButton("💬 Support", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "👥 Support", url=f"https://t.me/{GROUP_SUPPORT}"
-                    ),
-                    InlineKeyboardButton(
-                        "📣 Update's", url=f"https://t.me/{UPDATES_CHANNEL}"
-                    ),
-                ],
-                [
-                    InlineKeyboardButton(
-                        "🌐 Source Code", url="https://github.com/Vinuth-Dinsitha"
+                        "➕ Add me to your chat", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"
                     )
                 ],
             ]
