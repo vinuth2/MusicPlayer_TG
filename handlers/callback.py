@@ -249,10 +249,7 @@ async def cbdelcmds(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbcmds"))
 async def cbhelps(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""✨ **Hello** [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !
-
-» **press the button below to read the explanation and see the list of available commands !**
-­­­­­­­­­­­""",
+        f"""Press the button below to read the explanation and see the list of available commands!­­­­­­­­­­­""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
