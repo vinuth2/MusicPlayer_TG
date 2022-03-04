@@ -53,7 +53,8 @@ async def _human_time_duration(seconds):
 async def start_private(client: Client, message: Message):
     await message.reply_text(
         f"""Hey there! My name is **Stella** ✨
-I can Play and Download Music on Telegram. To know how to use me, Click on the Initial Setup button!""",
+I can Playing and Downloading music on Telegram.
+To know how to use me, Click on the Initial Setup button!""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
