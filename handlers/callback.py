@@ -168,7 +168,8 @@ async def cbguide(_, query: CallbackQuery):
 If the userbot not joined to video chat, Make sure if the video chat already turned on, or type /leave then type /join again..
 
 •[Support Group](https://t.me/MusicUpdates_Chat) | •[Updates Channel](https://t.me/The_Roboton) 
-• Bot Developer [Vinuth](http://t.me/ImVinuth)""",
+• Bot Developer [Vinuth](http://t.me/ImVinuth)
+Stella has been online since ```2022/2/14```""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [InlineKeyboardButton("📚 Command List", callback_data="cbhelp")],
@@ -268,7 +269,8 @@ async def cbguides(_, query: CallbackQuery):
 If the userbot not joined to video chat, Make sure if the video chat already turned on, or type /leave then type /join again..
 
 •[Support](https://t.me/MusicUpdates_Chat) | •[Updates](https://t.me/The_Roboton) 
-• Bot Developer [Vinuth](http://t.me/ImVinuth)""",
+• Bot Developer [Vinuth](http://t.me/ImVinuth)
+Stella has been online since ```2022/2/14```""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("« Back", callback_data="cbstart")]]
         ),
