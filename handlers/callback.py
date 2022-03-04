@@ -16,7 +16,7 @@ from config import (
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""Hey there! My name is **Stella** ✨
-A Bot for Music Playing and Downloading in Telegram. To know how to use me, Click on the Initial Setup button!""",
+I can Music Playing and Downloading. To know how to use me, Click on the Initial Setup button!""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -52,7 +52,7 @@ A Bot for Music Playing and Downloading in Telegram. To know how to use me, Clic
 @Client.on_callback_query(filters.regex("cbhelp"))
 async def cbhelp(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""Press the button below to read the explanation and see the list of available commands !**""",
+        f"""Press the button below to read the explanation and see the list of available commands!""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
