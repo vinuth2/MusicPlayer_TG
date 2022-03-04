@@ -18,7 +18,7 @@ async def cbstart(_, query: CallbackQuery):
         f"""Hey there! My name is **Stella** ✨
 A Robot for Music Playing and Downloading in Telegram. To know how to use me, Please click on the Initial Setup button!""",
         reply_markup=InlineKeyboardMarkup(
-[
+            [
                 [
                     InlineKeyboardButton(
                         "🎵 Add me",
