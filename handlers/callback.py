@@ -24,7 +24,7 @@ I can Play and Download Music on Telegram. To know how to use me, Click on the I
                 ],
                 [
                     InlineKeyboardButton("❓ Help", callback_data="cbcmds"),
-                    InlineKeyboardButton("💬 Support", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("💬 Support", url=f"https://t.me/MusicUpdates_Chat"),
                 ],
                 [
                     InlineKeyboardButton(
@@ -40,18 +40,18 @@ I can Play and Download Music on Telegram. To know how to use me, Click on the I
 @Client.on_callback_query(filters.regex("cbhelp"))
 async def cbhelp(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""Press the button below to read the explanation and see the list of available commands!""",
+        f"""**•** Press the button below to read the Explanation and See the list of Available Commands!""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("📚 Basic Cmd", callback_data="cbbasic"),
-                    InlineKeyboardButton("📕 Advanced Cmd", callback_data="cbadvanced"),
+                    InlineKeyboardButton("📚 Basic cmd", callback_data="cbbasic"),
+                    InlineKeyboardButton("📕 Advanced", callback_data="cbadvanced"),
                 ],
                 [
-                    InlineKeyboardButton("📘 Admin Cmd", callback_data="cbadmin"),
-                    InlineKeyboardButton("📗 Sudo Cmd", callback_data="cbsudo"),
+                    InlineKeyboardButton("📘 Admin", callback_data="cbadmin"),
+                    InlineKeyboardButton("📗 Sudo", callback_data="cbsudo"),
                 ],
-                [InlineKeyboardButton("📙 Owner Cmd", callback_data="cbowner")],
+                [InlineKeyboardButton("📙 Owner cmd", callback_data="cbowner")],
                 [InlineKeyboardButton("🔙 Go Back", callback_data="cbguide")],
             ]
         ),
