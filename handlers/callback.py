@@ -16,7 +16,8 @@ from config import (
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""Hey there! My name is **Stella** ✨
-I can Play and Download Music on Telegram. To know how to use me, Click on the Initial Setup button!""",
+I can Playing and Downloading music on Telegram.
+To know how to use me, click on the Initial Setup button!""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
