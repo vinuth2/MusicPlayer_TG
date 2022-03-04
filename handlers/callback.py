@@ -237,18 +237,18 @@ async def cbdelcmds(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbcmds"))
 async def cbhelps(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""Press the button below to read the explanation and see the list of available commands!­­­­­­­­­­­""",
+        f"""**•** Press the button below to read the Explanation and See the list of Available Commands!­­­­­­­­­­­""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("📚 Basic Cmd", callback_data="cblocal"),
-                    InlineKeyboardButton("📕 Advanced Cmd", callback_data="cbadven"),
+                    InlineKeyboardButton("📚 Basic cmd", callback_data="cblocal"),
+                    InlineKeyboardButton("📕 Advanced", callback_data="cbadven"),
                 ],
                 [
-                    InlineKeyboardButton("📘 Admin Cmd", callback_data="cblamp"),
-                    InlineKeyboardButton("📗 Sudo Cmd", callback_data="cblab"),
+                    InlineKeyboardButton("📘 Admin", callback_data="cblamp"),
+                    InlineKeyboardButton("📗 Sudo", callback_data="cblab"),
                 ],
-                [InlineKeyboardButton("📙 Owner Cmd", callback_data="cbmoon")],
+                [InlineKeyboardButton("📙 Owner cmd", callback_data="cbmoon")],
                 [InlineKeyboardButton("🔙 Go Back", callback_data="cbstart")],
             ]
         ),
