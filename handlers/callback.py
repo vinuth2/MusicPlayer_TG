@@ -16,7 +16,7 @@ from config import (
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""Hey there! My name is [Stella](https://telegra.ph/file/9e2f5cfae1145423c9203.jpg) ✨
-I can Play and Download music on Telegram. To know how to use me, Click on Initial Setup button!""",
+I Play and Download music on Telegram. To know how to use me, Click on Initial Setup button!""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -146,7 +146,7 @@ async def cbowner(_, query: CallbackQuery):
 /unblock (user id - reason) - unblock user you blocked for using your bot
 /blocklist - show you the list of user was blocked for using your bot
 
-📝 Note: All commands owned by this bot can be Executed by the Owner of the bot without any Exceptions.""",
+Note: All commands owned by this bot can be Executed by the Owner of the bot without any Exceptions.""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("« Back", callback_data="cbhelp")]]
         ),
@@ -366,7 +366,7 @@ async def cbmoon(_, query: CallbackQuery):
 /unblock (user id - reason) - unblock user you blocked for using your bot
 /blocklist - show you the list of user was blocked for using your bot
 
-📝 Note: All commands owned by this bot can be Executed by the Owner of the bot without any Exceptions.­­­­­­­­­­­""",
+Note: All commands owned by this bot can be Executed by the Owner of the bot without any Exceptions.­­­­­­­­­­­""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("« Back", callback_data="cbcmds")]]
         ),
