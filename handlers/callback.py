@@ -15,7 +15,7 @@ from config import (
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""Hey there! I'm [Stella](https://telegra.ph/file/9e2f5cfae1145423c9203.jpg) ✨
+        f"""Hey there! I'm [Stella](https://telegra.ph/file/cc41cf2eebde1c4c0a0dd.jpg) ✨
 I Play and Download music on Telegram. To know how to use me, click on the Initial Setup button below!""",
         reply_markup=InlineKeyboardMarkup(
             [
@@ -46,14 +46,14 @@ async def cbhelp(_, query: CallbackQuery):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("📚 Basic cmd", callback_data="cbbasic"),
-                    InlineKeyboardButton("📕 Advanced", callback_data="cbadvanced"),
+                    InlineKeyboardButton("👷🏻‍♀ Basic cmd", callback_data="cbbasic"),
+                    InlineKeyboardButton("🕵🏻‍♀ Advanced", callback_data="cbadvanced"),
                 ],
                 [
-                    InlineKeyboardButton("📘 Admin", callback_data="cbadmin"),
-                    InlineKeyboardButton("📗 Sudo", callback_data="cbsudo"),
+                    InlineKeyboardButton("👮🏻‍♀ Admin", callback_data="cbadmin"),
+                    InlineKeyboardButton("🧕🏻 Sudo", callback_data="cbsudo"),
                 ],
-                [InlineKeyboardButton("📙 Owner cmd", callback_data="cbowner")],
+                [InlineKeyboardButton("👩🏻‍🔧 Owner cmd", callback_data="cbowner")],
                 [InlineKeyboardButton("« Back", callback_data="cbguide")],
             ]
         ),
@@ -242,14 +242,14 @@ async def cbhelps(_, query: CallbackQuery):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("📚 Basic cmd", callback_data="cblocal"),
-                    InlineKeyboardButton("📕 Advanced", callback_data="cbadven"),
+                    InlineKeyboardButton("👷🏻‍♀ Basic cmd", callback_data="cblocal"),
+                    InlineKeyboardButton("🕵🏻‍♀ Advanced", callback_data="cbadven"),
                 ],
                 [
-                    InlineKeyboardButton("📘 Admin", callback_data="cblamp"),
-                    InlineKeyboardButton("📗 Sudo", callback_data="cblab"),
+                    InlineKeyboardButton("👮🏻‍♀ Admin", callback_data="cblamp"),
+                    InlineKeyboardButton("🧕🏻 Sudo", callback_data="cblab"),
                 ],
-                [InlineKeyboardButton("📙 Owner cmd", callback_data="cbmoon")],
+                [InlineKeyboardButton("👩🏻‍🔧 Owner cmd", callback_data="cbmoon")],
                 [InlineKeyboardButton("« Back", callback_data="cbstart")],
             ]
         ),
