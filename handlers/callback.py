@@ -82,7 +82,7 @@ async def cbbasic(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbadvanced"))
 async def cbadvanced(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""**Here is the Advanced Commands**
+        f"""<u>**Here is the Advanced Commands**</u>
 
 /start (in group) - see the bot alive status
 /reload - reload bot and refresh the admin list
@@ -302,7 +302,7 @@ async def cblocal(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbadven"))
 async def cbadven(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""**Here is the Advanced Commands**
+        f"""<u>**Here is the Advanced Commands**</u>
 
 /start (in group) - see the bot alive status
 /reload - reload bot and refresh the admin list
