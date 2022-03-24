@@ -82,7 +82,7 @@ async def cbbasic(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbadvanced"))
 async def cbadvanced(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""<u>**Here is the Advanced Commands**</u>
+        f"""**Here is the Advanced Commands**
 
 /start (in group) - see the bot alive status
 /reload - reload bot and refresh the admin list
@@ -98,20 +98,31 @@ async def cbadvanced(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbadmin"))
 async def cbadmin(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""**Here is the Admin Commands**
+        f"""**👮🏻‍♀ Admin Commands:**
 
-/player - show the music playing status
-/pause - pause the music streaming
-/resume - resume the music was paused
-/skip - skip to the next song
-/end - stop music streaming
-/join - invite userbot join to your group
-/leave - order the userbot to leave your group
-/auth - authorized user for using music bot
-/unauth - unauthorized for using music bot
-/control - open the player settings panel
-/delcmd (on / off) - enable / disable del cmd feature
-/music (on / off) - disable / enable music player in your group­­­­­­­­­­­""",
+/player - Show the music playing status
+/pause - Pause the music streaming
+/resume - Resume the music was paused
+/skip - Skip to the next song
+/end - Stop music streaming
+/join - Invite userbot join to your group
+/leave - Order the userbot to leave
+
+✅ <u>**Specific Skip:**</u>
+/skip [Number(example: 3)] 
+    - Skips music to a the specified queued number. Example: /skip 3 will skip music to third queued music and will ignore 1 and 2 music in queue.
+
+✅ <u>**Settings:**</u>
+/control - Open the player settings panel
+/delcmd (on/off) - Enable/Disable del cmd feature
+/music (on/off) - Disable/Enable music player in your group
+
+✅ <u>**Auth Users:**</u>
+Auth Users can use admin commands without admin rights in your chat.
+
+/auth [Username] - Add a user to AUTH LIST of the group.
+/unauth [Username] - Remove a user from AUTH LIST of the group.
+/authusers - Check AUTH LIST of the group.""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("« Back", callback_data="cbhelp")]]
         ),
@@ -302,7 +313,7 @@ async def cblocal(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbadven"))
 async def cbadven(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""<u>**Here is the Advanced Commands**</u>
+        f"""**Here is the Advanced Commands**
 
 /start (in group) - see the bot alive status
 /reload - reload bot and refresh the admin list
@@ -318,20 +329,31 @@ async def cbadven(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cblamp"))
 async def cblamp(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""**Here is the Admin Commands**
+        f"""**👮🏻‍♀ Admin Commands:**
 
-/player - show the music playing status
-/pause - pause the music streaming
-/resume - resume the music was paused
-/skip - skip to the next song
-/end - stop music streaming
-/join - invite userbot join to your group
-/leave - order the userbot to leave your group
-/auth - authorized user for using music bot
-/unauth - unauthorized for using music bot
-/control - open the player settings panel
-/delcmd (on / off) - enable / disable del cmd feature
-/music (on / off) - disable / enable music player in your group""",
+/player - Show the music playing status
+/pause - Pause the music streaming
+/resume - Resume the music was paused
+/skip - Skip to the next song
+/end - Stop music streaming
+/join - Invite userbot join to your group
+/leave - Order the userbot to leave
+
+✅ <u>**Specific Skip:**</u>
+/skip [Number(example: 3)] 
+    - Skips music to a the specified queued number. Example: /skip 3 will skip music to third queued music and will ignore 1 and 2 music in queue.
+
+✅ <u>**Settings:**</u>
+/control - Open the player settings panel
+/delcmd (on/off) - Enable/Disable del cmd feature
+/music (on/off) - Disable/Enable music player in your group
+
+✅ <u>**Auth Users:**</u>
+Auth Users can use admin commands without admin rights in your chat.
+
+/auth [Username] - Add a user to AUTH LIST of the group.
+/unauth [Username] - Remove a user from AUTH LIST of the group.
+/authusers - Check AUTH LIST of the group.""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("« Back", callback_data="cbcmds")]]
         ),
