@@ -108,11 +108,12 @@ async def cbadmin(_, query: CallbackQuery):
 /join - Invite userbot join to your group
 /leave - Order the userbot to leave
 
+
 ✅ <u>**Specific Skip:**</u>
 /skip [Number(example: 3)] 
     - Skips music to a the specified queued number. Example: /skip 3 will skip music to third queued music and will ignore 1 and 2 music in queue.
 
-✅ <u>**Settings:**</u>
+✅ <u>**Player Settings:**</u>
 /control - Open the player settings panel
 /delcmd (on/off) - Enable/Disable del cmd feature
 /music (on/off) - Disable/Enable music player in your group
@@ -120,9 +121,9 @@ async def cbadmin(_, query: CallbackQuery):
 ✅ <u>**Auth Users:**</u>
 Auth Users can use admin commands without admin rights in your chat.
 
-/auth [Username] - Add a user to AUTH LIST of the group.
-/unauth [Username] - Remove a user from AUTH LIST of the group.
-/authusers - Check AUTH LIST of the group.""",
+/auth [Username] - Add a user to Aith List of the group.
+/unauth [Username] - Remove a user from Auth List of the group.
+/authusers - Check Auth List of the group.""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("« Back", callback_data="cbhelp")]]
         ),
@@ -339,11 +340,12 @@ async def cblamp(_, query: CallbackQuery):
 /join - Invite userbot join to your group
 /leave - Order the userbot to leave
 
+
 ✅ <u>**Specific Skip:**</u>
 /skip [Number(example: 3)] 
     - Skips music to a the specified queued number. Example: /skip 3 will skip music to third queued music and will ignore 1 and 2 music in queue.
 
-✅ <u>**Settings:**</u>
+✅ <u>**Player Settings:**</u>
 /control - Open the player settings panel
 /delcmd (on/off) - Enable/Disable del cmd feature
 /music (on/off) - Disable/Enable music player in your group
@@ -351,9 +353,9 @@ async def cblamp(_, query: CallbackQuery):
 ✅ <u>**Auth Users:**</u>
 Auth Users can use admin commands without admin rights in your chat.
 
-/auth [Username] - Add a user to AUTH LIST of the group.
-/unauth [Username] - Remove a user from AUTH LIST of the group.
-/authusers - Check AUTH LIST of the group.""",
+/auth [Username] - Add a user to Auth List of the group.
+/unauth [Username] - Remove a user from Auth List of the group.
+/authusers - Check Auth List of the group.""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("« Back", callback_data="cbcmds")]]
         ),
@@ -408,7 +410,7 @@ async def cmdhome(_, query: CallbackQuery):
         ]
     )
     
-    nofound = "😕 **couldn't find song you requested**\n\n» **please provide the correct song name or include the artist's name as well**"
+    nofound = "🙁 **couldn't find song you requested**\n\n» **please provide the correct song name or include the artist's name as well**"
     
     await query.edit_message_text(nofound, reply_markup=bttn)
 
