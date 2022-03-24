@@ -121,9 +121,9 @@ async def cbadmin(_, query: CallbackQuery):
 ✅ <u>**Auth Users:**</u>
 Auth Users can use admin commands without admin rights in your chat.
 
-/auth [Username] - Add a user to Aith List of the group.
-/unauth [Username] - Remove a user from Auth List of the group.
-/authusers - Check Auth List of the group.""",
+/auth [Username] - Add a user to AUTH LIST of the group.
+/unauth [Username] - Remove a user from AUTH LIST of the group.
+/authusers - Check AUTH LIST of the group.""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("« Back", callback_data="cbhelp")]]
         ),
@@ -353,9 +353,9 @@ async def cblamp(_, query: CallbackQuery):
 ✅ <u>**Auth Users:**</u>
 Auth Users can use admin commands without admin rights in your chat.
 
-/auth [Username] - Add a user to Auth List of the group.
-/unauth [Username] - Remove a user from Auth List of the group.
-/authusers - Check Auth List of the group.""",
+/auth [Username] - Add a user to AUTH LIST of the group.
+/unauth [Username] - Remove a user from AUTH LIST of the group.
+/authusers - Check AUTH LIST of the group.""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("« Back", callback_data="cbcmds")]]
         ),
