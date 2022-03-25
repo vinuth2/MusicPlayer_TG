@@ -63,10 +63,6 @@ I Play and Download music on Telegram. To know how to use me, click on the **Ini
                 ],
                 [
                     InlineKeyboardButton("❓ Help", callback_data="cbcmds"),
-                    InlineKeyboardButton(
-                                text="Try inline",
-                                switch_inline_query_current_chat=""),
-                [
                     InlineKeyboardButton("💬 Support", url=f"https://t.me/MusicUpdates_Chat"),
                 ],
                 [
@@ -125,7 +121,7 @@ async def ping_pong(client: Client, message: Message):
     start = time()
     m_reply = await message.reply_text("Pinging Network speed...")
     delta_ping = time() - start
-    await m_reply.edit_text("🏓 `PONG!!`\n" f"⚡️ `{delta_ping * 1000:.3f} ms`\n"f"💻`Server : Heroku`\n\n"f"`Database : Mongodb`")
+    await m_reply.edit_text("🏓 `PONG!!`\n" f"⚡️ `{delta_ping * 1000:.3f} ms`\n"f"👤`Dev : Vinuth`\n"f"💻`Server : Heroku`\n\n"f"`Database : Mongodb`")
 
 
 @Client.on_message(command(["uptime", f"uptime@{BOT_USERNAME}"]) & ~filters.edited)
