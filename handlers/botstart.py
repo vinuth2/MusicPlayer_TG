@@ -63,6 +63,10 @@ I Play and Download music on Telegram. To know how to use me, click on the **Ini
                 ],
                 [
                     InlineKeyboardButton("❓ Help", callback_data="cbcmds"),
+                    InlineKeyboardButton(
+                                text="Try inline",
+                                switch_inline_query_current_chat=""),
+                [
                     InlineKeyboardButton("💬 Support", url=f"https://t.me/MusicUpdates_Chat"),
                 ],
                 [
