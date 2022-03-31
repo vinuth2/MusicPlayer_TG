@@ -53,8 +53,7 @@ async def _human_time_duration(seconds):
 async def start_private(client: Client, message: Message):
     await message.reply_text(
         f"""───「[Princess Stella](https://telegra.ph/file/cc41cf2eebde1c4c0a0dd.jpg)」───
-
-**Hey there! I'm STΞLLΔ** ✨
+**Hey there! I am your SweetHeart, Stella Robot** ✨
 I Play and Download music on Telegram. To know how to use me, click on the **Initial Setup** button below!""",
         reply_markup=InlineKeyboardMarkup(
             [
