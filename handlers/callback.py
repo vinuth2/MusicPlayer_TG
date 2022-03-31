@@ -15,7 +15,7 @@ from config import (
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""**Hey there! I'm [Stella](https://telegra.ph/file/cc41cf2eebde1c4c0a0dd.jpg) ✨**
+        f"""**Hey there! I'm [Stella](https://telegra.ph/file/cc41cf2eebde1c4c0a0dd.jpg)** ✨
 I Play and Download music on Telegram. To know how to use me, click on the **Initial Setup** button below!""",
         reply_markup=InlineKeyboardMarkup(
             [
